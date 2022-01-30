@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Grapesjs from "grapesjs";
-import "grapesjs/dist/css/grapes.min.css";
+import 'grapesjs/dist/css/grapes.min.css';
+import grapesjs from 'grapesjs';
 
 import GrapeConfig from "./GrapeConfig";
 
@@ -92,7 +92,7 @@ const GrapeMain = () => {
   };
 
   const loadGrapesJs = async () => {
-    const editor = await Grapesjs.init(GrapeConfig());
+    const editor = await grapesjs.init(GrapeConfig());
     window.editor = editor;
     editor.on("style:property:update", (a) => {
       console.log(a, "dvdsvdsvsvs");

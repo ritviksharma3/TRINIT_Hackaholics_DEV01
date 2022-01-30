@@ -1,13 +1,12 @@
-import React from 'react';
-import PageBuilder from '../PageBuilder';
-import GrapesjsMain from '../../components/GrapeConfig';
+import React from "react";
+import GrapeMain from "../../components/GrapeMain";
 
 const AppContainer = (props) => {
-    return (
-        <div>
-            <GrapesjsMain {...props}/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <GrapeMain {...props} />
+    </div>
+  );
+};
 
-export default AppContainer
+export default AppContainer;
